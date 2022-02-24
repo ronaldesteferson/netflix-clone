@@ -1,6 +1,6 @@
 :root{
-    --vermelho:#e50914;
-    --preto:#141414;
+    --red:#e50914;
+    --black:#141414;
 }
 
 *{
@@ -11,7 +11,7 @@
 
 /*elementos base*/
 body{
-    background: var(--preto);
+    background: var(--black);
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
@@ -25,7 +25,7 @@ header .container{
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    color: var(--red);
     font-family: 'Arial Black', Times;
     Font-size: 40px;
 }
@@ -90,4 +90,22 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
