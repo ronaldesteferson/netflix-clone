@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,63 +12,72 @@
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-    
+
     <title>NETFLIX - Clone de Ronald</title>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <NAV>
-                <a href="">Início</a>
-                <a href="">Filmes</a>
-                <a href="">Séries</a>
-                <a href="">Documentários</a>
-            </NAV>
+        <div class="logo">
+            <a>NETFLIX</a>
         </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Filmes</a>
+            <a href="#">Séries</a>
+            <a href="#">Documentários</a>
+            <img class="avatar-perfil" src="img/avatar-perfil.png" alt="Imagem de avatar do perfil">
+        </nav>
+
     </header>
-    
+
     <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">SHINGEKI NO KYOJIN</h3>
-                <p class="descricao">
-                    Para escapar dos titãs, gigantes devoradores de homens, a humanidade se refugiou em cidades cercadas por enormes muralhas.
+        <div class="main-film">
+            <div>
+                <h1 class="title-main-film">SHINGEKI NO KYOJIN</h1>
+            </div>
+            <div>
+                <p class="description">
+                    Para escapar dos titãs, gigantes devoradores de homens, a humanidade se refugiou em cidades cercadas
+                    por enormes muralhas.
                 </p>
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        MAIS INFORMAÇÕES
-                    </button>
+            </div>
+            <div class="buttons">
+                <button>
+                    ASSISTIR AGORA
+                </button>
+                <button>
+                    MAIS INFORMAÇÕES
+                </button>
+            </div>
+        </div>
+        <div class="other-films">
+            <div class="carrosel-films">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="mini-films" src="img/mini1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="mini-films" src="img/mini2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="mini-films" src="img/mini3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="mini-films" src="img/mini4.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="mini-films" src="img/mini5.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="mini-films" src="img/mini6.jpg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
-            </div>
-        </div>
-    </div>
+
 
     <script src="https://kit.fontawesome.com/1b71c8df5f.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
@@ -75,4 +85,5 @@
     <script src="js/owl/setup.js"></script>
 
 </body>
+
 </html>
