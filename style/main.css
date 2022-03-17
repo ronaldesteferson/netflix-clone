@@ -3,105 +3,110 @@
     --black:#141414;
 }
 
+/*css reset*/
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-/*elementos base*/
+/*general header*/
 body{
     background: var(--black);
     font-family: 'Arial', Times, serif;
     color: white;
+
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/snk.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
 }
 
-header .container{
+header{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(30,0,10,.60),rgba(0,0,0,.0)100%);
+
 }
 
-header .logo{
-    margin-left: 5px;
+header .logo a{
     color: var(--red);
     font-family: 'Arial Black', Times;
     Font-size: 40px;
+    padding: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 header a{
+    align-items: center;
+    padding: 8px;
+    margin: 5px;
+    
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
 }
 
 header nav a:hover{
     color: #FFF;
 }
 
+.avatar-perfil{
+    width: 55px;
+    margin: 5px;
+}
+
 /*elementos filme principal*/
-.filme-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/snk.jpg);
-
-    height: 400px;
-    background-size: cover;
-
+.main-film{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 400px;
+    max-width: 500px;
+    font-size:16px;
+    padding: 20px;
 }
 
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 8%;
-}
-
-.titulo{
-    margin-top: 10%;
+.title-main-film{
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 7px;
 }
 
-.botao{
+button{
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
+    font-size: 12px;
 
     padding: 15px 30px;
     margin-right: 15px;
-    font-size: 12px;
+    margin-top: 15px;
     
     cursor: pointer;
     transition: .2s ease all;
 }
 
-.botao:hover{
+button:hover{
     background-color: white;
     color: black;
 }
 
-.botao i{
-    margin-right: 8px;
+/*carrosel films style*/
+
+.carrosel-films{
+    background-color: #141414dc;
 }
 
-.container {
-    margin-left: 20px;
-}
-
-.filme-principal .container {
-    width: 70%;
-}
-
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
+.mini-films{
+    display: flex;
     cursor: pointer;
-}
-
-.carrosel-filmes{
-    margin-top: 5px;
 }
